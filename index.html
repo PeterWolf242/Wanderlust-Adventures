@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Wanderlust Adventures</title>
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: "OpenSans";
+          src: url("./assets/fonts/OpenSans.ttf");
+        }
+
+        h1 {
+          @apply text-5xl mb-8 font-bold text-white;
+        }
+
+        h2 {
+          @apply text-center text-base mb-4 font-normal uppercase text-white;
+        }
+
+        h3 {
+          @apply text-2xl uppercase text-white font-extrabold;
+        }
+
+        h4 {
+          @apply text-4xl mb-7;
+        }
+
+        a {
+          @apply px-4 text-lg;
+        }
+
+        p {
+          @apply font-light	mt-7;
+        }
+
+        /* a:hover {
+          cli
+        } */
+
+        p {
+          @apply text-xl mb-4;
+        }
+
+        .btn {
+          @apply bg-orange-600 py-3 px-6 text-center text-white font-semibold hover:bg-white hover:text-orange-600 rounded-none;
+        }
+
+        * {
+          font-family: "OpenSans", sans-serif;
+        }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue_green: "#21B2A6",
+              blue_green_dark: "#3b9890",
+              grey_darker: "rgba(0, 0, 0, 0.08)",
+              grey_lighter: "rgba(0, 0, 0, 0.15)",
+              purple_main: "#59469b",
+              purple_1: "#564396",
+              purple_2: "#524091",
+              purple_3: "#503e8a",
+              purple_4: "#4d3c85",
+              purple_5: "#493980",
+              purple_6: "#46377b",
+              purple_dark: "#4e3e88",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="w-100 h-svh bg-[url('./assets/img/header_bg.jpg')] bg-no-repeat bg-cover bg-center text-white relative"
+    >
+      <article
+        class="haupt h-full w-full flex justify-center items-center flex-col px-4"
+      >
+        <h1 class="border-y-2 border-white py-4 px-6 text-center">
+          Wanderlust Adventures
+        </h1>
+        <h2 class="text-center">
+          A fine template for a <br />
+          travel agency with responsive focus
+        </h2>
+        <button class="btn uppercase tracking-[4px]">Lets Go</button>
+      </article>
+    </header>
+    <main>
+      <!--? Section "„Not all those who wander are lost.“ – J.R.R. Tolkien"  -->
+      <section
+        class="bg-blue_green box_cyan md:px-[6vw] lg:px-[20vw] py-[10vh] px-[2vw]"
+      >
+        <article class="mx-auto">
+          <h3
+            class="text-center pb-8 border-b-2 border-blue_green_dark w-fit mx-auto"
+          >
+            „Not all those who wander are lost.“ – J.R.R. Tolkien
+          </h3>
+          <p class="text-center mx-auto text-slate-300">
+            Are you ready to embark on the journey of a lifetime? At Wanderlust
+            Adventures, we specialize in curating unforgettable travel
+            experiences tailored to your unique desires. Whether you're seeking
+            a tranquil beach getaway, an exhilarating adventure in the
+            mountains, or a culturally enriching city tour, we've got you
+            covered. So, what are you waiting for? Unleash your wanderlust and
+            let us transform your dreams into reality.
+          </p>
+          <div class="flex justify-center items-center gap-6 mt-8">
+            <img
+              src="./assets/img/icon_kompass.png"
+              alt="Icon Kompass"
+              title="Icon Kompass"
+              aria-label="Icon Kompass"
+            />
+            <img
+              src="./assets/img/icon_wall.png"
+              alt="Icon Wall"
+              title="Icon Wall"
+              aria-label="Icon Wall"
+            />
+            <img
+              src="./assets/img/icon_locations.png"
+              alt="Icon Location"
+              title="Icon Location"
+              aria-label="Icon Location"
+            />
+          </div>
+        </article>
+      </section>
+
+      <!--? Section Columbia - Paris - Hungary  -->
+      <section class="w-100">
+        <div
+          class="bg-grey_darker flex justify-center items-center max-[1200px]:flex-row-reverse max-[1200px]:flex-col"
+        >
+          <img
+            class="lg:w-full max-[1200px]:block max-[1200px]:w-full"
+            src="./assets/img/street-view-columbia.jpg"
+            alt="Street-View"
+            title="Street-View"
+            aria-label="Street-View"
+          />
+          <article
+            class="flex-col lg:px-[4vw] max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+          >
+            <h3 class="lg:w-2/5 lg:text-left md:w-auto md:text-center">
+              Colombia - vibrant latinamerica
+            </h3>
+            <p class="lg:text-left md:w-auto md:text-center text-white">
+              Experience the vibrant beauty of Colombia. From the lush coffee
+              plantations to the colonial charm of Cartagena, this country
+              offers captivating landscapes and rich cultural experiences.
+              Explore Tayrona National Park's pristine beaches, wander through
+              the Cocora Valley's towering palm trees, and immerse yourself in
+              the flavors of Colombian cuisine. Unforgettable adventures await
+              in this enchanting South American destination.
+            </p>
+          </article>
+        </div>
+
+        <div
+          class="bg-grey_darker flex justify-center items-center max-[1200px]:flex-row max-[1200px]:flex-col-reverse"
+        >
+          <article
+            class="flex-col lg:px-[4vw] max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+          >
+            <h3 class="lg:w-2/5 lg:text-left md:w-auto md:text-center">
+              Paris - pure elegance
+            </h3>
+            <p class="lg:text-left md:w-auto md:text-center text-white">
+              Experience the timeless allure of Paris, the City of Lights.
+              Stroll along the romantic Seine River, marvel at the iconic Eiffel
+              Tower, and indulge in delectable French cuisine. From world-class
+              art to charming cafes, Paris offers an enchanting blend of history
+              and sophistication.
+            </p>
+          </article>
+          <img
+            class="lg:w-full max-[1200px]:block max-[1200px]:w-full"
+            src="./assets/img/bridge-view-paris.jpg"
+            alt="Street-View"
+            title="Street-View"
+            aria-label="Street-View"
+          />
+        </div>
+
+        <div
+          class="bg-grey_darker flex justify-center items-center max-[1200px]:flex-row-reverse max-[1200px]:flex-col"
+        >
+          <img
+            class="lg:w-full max-[1200px]:block max-[1200px]:w-full"
+            src="./assets/img/tower-view.jpg"
+            alt="Street-View"
+            title="Street-View"
+            aria-label="Street-View"
+          />
+          <article
+            class="flex-col lg:px-[4vw] max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+          >
+            <h3 class="lg:w-2/5 lg:text-left md:w-auto md:text-center">
+              Hungary - unknown beauty
+            </h3>
+            <p class="lg:text-left md:w-auto md:text-center text-white">
+              Discover the hidden gems of Hungary, a land of rich history and
+              breathtaking landscapes. Explore the stunning architecture of
+              Budapest, soak in the healing waters of thermal baths, and indulge
+              in traditional Hungarian cuisine. From charming villages to
+              enchanting castles, Hungary will captivate your heart.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--? Section "Our Promise" -->
+      <section
+        class="w-100 h-screen py-[10vh] lg:px-[15vw] bg-purple-800"
+      >
+        <article>
+          <h3
+            class="w-fit text-white text-center mx-auto pb-4 border-b-2 by-4 border-purple_dark font-extrabold"
+          >
+            Our Promise
+          </h3>
+          <p class="text-white w-4/5 text-center mx-auto">
+            At Wanderlust Adventures, we understand that every traveler is
+            unique, and that's why we offer personalized itineraries. Our team
+            of expert travel consultants will work closely with you to
+            understand your preferences, interests, and budget, crafting a
+            tailor-made trip that exceeds your expectations.
+          </p>
+        </article>
+
+        <section class="w-100 flex mt-10 max-[1200px]:block">
+          <div
+            class="bg-purple_1 w-1/2 py-[8vw] px-[8vw] max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+          >
+            <h3
+              class="text-white max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+            >
+              Personalized Itineraries
+            </h3>
+            <p
+              class="text-white text-left max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+            >
+              Our travel agency specializes in crafting customized itineraries
+              tailored to your preferences, ensuring that every aspect of your
+              journey is personalized to create a truly unique and unforgettable
+              experience.
+            </p>
+          </div>
+
+          <div
+            class="bg-purple_2 w-1/2 py-[8vw] px-[8vw] max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+          >
+            <h3
+              class="text-white max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+            >
+              Personalized Itineraries
+            </h3>
+            <p
+              class="text-white text-left max-[1200px]:block max-[1200px]:w-full max-[1200px]:py-[10vh] max-[1200px]:px-[4vw] max-[1200px]:text-center"
+            >
+              Our travel agency specializes in crafting customized itineraries
+              tailored to your preferences, ensuring that every aspect of your
+              journey is personalized to create a truly unique and unforgettable
+              experience.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
